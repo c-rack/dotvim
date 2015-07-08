@@ -32,17 +32,41 @@
 " For more information, please refer to <http://unlicense.org/>
 
 
-" General settings ------------------------------------------------------------
+" -----------------------------------------------------------------------------
+" General settings
+" -----------------------------------------------------------------------------
 set background=dark " use dark background
 set number          " show line numbers
 set cul             " highlight current line
 set ruler           " show line,column in status bar
 
-" Change cursor shape in different modes --------------------------------------
+" -----------------------------------------------------------------------------
+" Change cursor shape in different modes
+" -----------------------------------------------------------------------------
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
+" -----------------------------------------------------------------------------
 " Highlight text that goes over the 80 column limit
+" -----------------------------------------------------------------------------
 highlight OverLength ctermbg=red ctermfg=white guibg=#603030
 match OverLength /\%80v.\+/
+
+
+
+" Useful commands:
+"
+" D  - delete from current cursor position until end of line and copy to buffer
+" dd - delete current line
+" :0 - Go to first line of document
+" :$ - Go to last line of document
+" 0  - Go to first column
+" $  - Go to last column
+" x  - Delete character
+" :p - Paste clipboard
+" :y - Copy current line to clipboard
+" k  - Go up
+" l  - Go right
+" h  - Go left
+" j  - Go down
 
