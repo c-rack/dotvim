@@ -61,17 +61,18 @@ match OverLength /\%80v.\+/
 
 " Useful commands:
 "
-" D  - delete from current cursor position until end of line and copy to buffer
-" dd - delete current line
-" :0 - Go to first line of document
-" :$ - Go to last line of document
-" 0  - Go to first column
-" $  - Go to last column
-" x  - Delete character
-" :p - Paste clipboard
-" :y - Copy current line to clipboard
-" k  - Go up
-" l  - Go right
-" h  - Go left
-" j  - Go down
+" D   - delete from current cursor position until end of line
+" dd  - delete current line
+" :0  - Go to first line of document
+" :$  - Go to last line of document
+" 0   - Go to first column
+" $   - Go to last column
+" x   - Delete character
+" :p  - Paste clipboard
+" :y  - Copy current line to clipboard
+" k   - Go up
+" l   - Go right
+" h   - Go left
+" j   - Go down
+" :Ex - Show file explorer
 
