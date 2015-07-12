@@ -35,11 +35,11 @@
 " -----------------------------------------------------------------------------
 " General settings
 " -----------------------------------------------------------------------------
-set backspace=2     " make backspace work like most other apps
-set background=dark " use dark background
-set number          " show line numbers
-set cul             " highlight current line
-set ruler           " show line,column in status bar
+set backspace=indent,eol,start " make backspace work like most other apps
+set background=dark            " use dark background
+set number                     " show line numbers
+set cul                        " highlight current line
+set ruler                      " show line,column in status bar
 
 " -----------------------------------------------------------------------------
 " Enable syntax highlighting
