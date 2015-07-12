@@ -46,6 +46,7 @@ set ruler                      " show line,column in status bar
 " -----------------------------------------------------------------------------
 set expandtab                  " convert tabs to spaces
 set tabstop=4                  " default tabstop
+set softtabstop=4              " makes the spaces feel like real tabs
 set shiftwidth=4               " number of spaces inserted for indentation
 
 " -----------------------------------------------------------------------------
@@ -86,4 +87,7 @@ match OverLength /\%80v.\+/
 " :Ex    - Show file explorer
 " :!cmd  - Execute cmd on shell, for example ":!mvn test"
 " J      - Join current line with next one, removing newline
+
+" TODO:
+" - http://vim.wikia.com/wiki/Moving_lines_up_or_down
 
