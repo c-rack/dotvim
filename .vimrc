@@ -42,6 +42,13 @@ set cul                        " highlight current line
 set ruler                      " show line,column in status bar
 
 " -----------------------------------------------------------------------------
+" Tab stop
+" -----------------------------------------------------------------------------
+set expandtab                  " convert tabs to spaces
+set tabstop=4                  " default tabstop
+set shiftwidth=4               " number of spaces inserted for indentation
+
+" -----------------------------------------------------------------------------
 " Enable syntax highlighting
 " -----------------------------------------------------------------------------
 syntax on
