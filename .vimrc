@@ -35,6 +35,7 @@
 " -----------------------------------------------------------------------------
 " General settings
 " -----------------------------------------------------------------------------
+set backspace=2     " make backspace work like most other apps
 set background=dark " use dark background
 set number          " show line numbers
 set cul             " highlight current line
