@@ -4,6 +4,11 @@
 
 ## Principles
 
+If you [clone / fork](https://help.github.com/articles/fork-a-repo/) this project in order
+to use it on your own or
+to send [pull requests](https://help.github.com/articles/using-pull-requests/),
+please follow these principles:
+
 Which?|Why?
 ------------|-----------
 [KISS](https://en.wikipedia.org/wiki/KISS_principle)|Configure only the absolute minimum
