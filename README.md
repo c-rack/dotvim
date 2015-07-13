@@ -9,7 +9,7 @@ to use it on your own or
 to send [pull requests](https://help.github.com/articles/using-pull-requests/),
 please follow these principles:
 
-Which?|Why?
+Principle|Explanation
 ------------|-----------
 [KISS](https://en.wikipedia.org/wiki/KISS_principle)|Configure only the absolute minimum
 [EYODF](https://en.wikipedia.org/wiki/Eating_your_own_dog_food)|Use it on your own
