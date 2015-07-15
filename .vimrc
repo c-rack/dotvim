@@ -78,6 +78,12 @@ autocmd InsertEnter * match TrailingWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match TrailingWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" -----------------------------------------------------------------------------
+" Remove trailing whitespace on write
+" http://vim.wikia.com/wiki/Remove_unwanted_spaces
+" -----------------------------------------------------------------------------
+autocmd BufWritePre * :%s/\s\+$//e
+
 
 " Useful commands:
 "
