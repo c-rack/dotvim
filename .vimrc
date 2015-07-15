@@ -67,6 +67,16 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 highlight OverLength ctermbg=red ctermfg=white guibg=#603030
 match OverLength /\%80v.\+/
 
+" -----------------------------------------------------------------------------
+" Highlight trailing whitespace
+" http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+" -----------------------------------------------------------------------------
+highlight TrailingWhitespace ctermbg=red guibg=red
+:match TrailingWhitespace /\s\+$/
+autocmd BufWinEnter * match TrailingWhitespace /\s\+$/
+autocmd InsertEnter * match TrailingWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match TrailingWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 
 " Useful commands:
@@ -88,6 +98,7 @@ match OverLength /\%80v.\+/
 " :Ex    - Show file explorer
 " :!cmd  - Execute cmd on shell, for example ":!mvn test"
 " J      - Join current line with next one, removing newline
+" ~      - Switch current position between uppercase and lowercase
 
 " TODO:
 " - http://vim.wikia.com/wiki/Moving_lines_up_or_down
