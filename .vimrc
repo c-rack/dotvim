@@ -37,8 +37,9 @@
 " -----------------------------------------------------------------------------
 set backspace=indent,eol,start " make backspace work like most other apps
 set background=dark            " use dark background
-set number                     " show line numbers
 set cul                        " highlight current line
+set hlsearch                   " highlight search results
+set number                     " show line numbers
 set ruler                      " show line,column in status bar
 
 " -----------------------------------------------------------------------------
