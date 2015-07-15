@@ -41,6 +41,7 @@ set cul                        " highlight current line
 set hlsearch                   " highlight search results
 set number                     " show line numbers
 set ruler                      " show line,column in status bar
+set smartindent                " smart autoindenting when starting a new line
 
 " -----------------------------------------------------------------------------
 " Tab stop
