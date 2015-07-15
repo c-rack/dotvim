@@ -68,17 +68,6 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#603030
 match OverLength /\%80v.\+/
 
 " -----------------------------------------------------------------------------
-" Highlight trailing whitespace
-" http://vim.wikia.com/wiki/Highlight_unwanted_spaces
-" -----------------------------------------------------------------------------
-highlight TrailingWhitespace ctermbg=red guibg=red
-:match TrailingWhitespace /\s\+$/
-autocmd BufWinEnter * match TrailingWhitespace /\s\+$/
-autocmd InsertEnter * match TrailingWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match TrailingWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
-" -----------------------------------------------------------------------------
 " Remove trailing whitespace on write
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 " -----------------------------------------------------------------------------
