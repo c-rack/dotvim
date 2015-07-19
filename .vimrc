@@ -77,14 +77,15 @@ autocmd BufWritePre * :%s/\s\+$//e
 " -----------------------------------------------------------------------------
 " Move lines up and down
 " http://vim.wikia.com/wiki/Moving_lines_up_or_down
-" In iTerm2, set "Left option key acts as:" to "+Esc" to use as <A-j> / <A-k>
+" Character "º" is <A-j> on my keyboard, character "∆" is <A-k>.
+" You may want to adjust this to match your keyboard settings.
 " -----------------------------------------------------------------------------
-nnoremap <Esc>j :m .+1<CR>==
-nnoremap <Esc>k :m .-2<CR>==
-inoremap <Esc>j <Esc>:m .+1<CR>==gi
-inoremap <Esc>k <Esc>:m .-2<CR>==gi
-vnoremap <Esc>j :m '>+1<CR>gv=gv
-vnoremap <Esc>k :m '<-2<CR>gv=gv
+nnoremap º :m .+1<CR>==
+nnoremap ∆ :m .-2<CR>==
+inoremap º <Esc>:m .+1<CR>==gi
+inoremap ∆ <Esc>:m .-2<CR>==gi
+vnoremap º :m '>+1<CR>gv=gv
+vnoremap ∆ :m '<-2<CR>gv=gv
 
 
 " Useful commands:
