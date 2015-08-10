@@ -87,6 +87,10 @@ inoremap ∆ <Esc>:m .-2<CR>==gi
 vnoremap º :m '>+1<CR>gv=gv
 vnoremap ∆ :m '<-2<CR>gv=gv
 
+" -----------------------------------------------------------------------------
+" Enable syntax highlighting for *.md markdown files
+" -----------------------------------------------------------------------------
+" autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 " Useful commands:
 "
@@ -108,4 +112,6 @@ vnoremap ∆ :m '<-2<CR>gv=gv
 " :!cmd  - Execute cmd on shell, for example ":!mvn test"
 " J      - Join current line with next one, removing newline
 " ~      - Switch current position between uppercase and lowercase
+" @:     - Repeat last command entered with ":"
+" @@     - Further repeat last command
 
