@@ -92,26 +92,36 @@ vnoremap ∆ :m '<-2<CR>gv=gv
 " -----------------------------------------------------------------------------
 " autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
+" -----------------------------------------------------------------------------
+" Enable syntax highlighting for *.adoc AsciiDoc files
+" -----------------------------------------------------------------------------
+autocmd BufNewFile,BufFilePre,BufRead *.adoc set filetype=asciidoc
+
 " Useful commands:
 "
 " D      - delete from current cursor position until end of line
 " dd     - delete current line
-" :0     - Go to first line of document
-" :$     - Go to last line of document
-" 0      - Go to first column
-" $      - Go to last column
 " x      - Delete character
 " :d[n]  - Delete [n] lines and copy to clipboard
 " :p     - Paste clipboard
 " :y     - Copy current line to clipboard
-" k      - Go up
-" l      - Go right
-" h      - Go left
-" j      - Go down
 " :Ex    - Show file explorer
 " :!cmd  - Execute cmd on shell, for example ":!mvn test"
 " J      - Join current line with next one, removing newline
 " ~      - Switch current position between uppercase and lowercase
 " @:     - Repeat last command entered with ":"
 " @@     - Further repeat last command
+
+" Navigation:
+"
+" k      - Go up
+" l      - Go right
+" h      - Go left
+" j      - Go down
+" w      - Go to next word
+" b      - Go to previous word
+" 0      - Go to first column
+" $      - Go to last column
+" :0     - Go to first line of document
+" :$     - Go to last line of document
 
