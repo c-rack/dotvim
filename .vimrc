@@ -4,6 +4,8 @@
 "
 " https://github.com/c-rack/dotvim
 "
+" Execute "install.sh" to automatically install the plugins.
+"
 " =============================================================================
 "
 " This is free and unencumbered software released into the public domain.
@@ -31,17 +33,21 @@
 "
 " For more information, please refer to <http://unlicense.org/>
 
-
 " -----------------------------------------------------------------------------
 " General settings
 " -----------------------------------------------------------------------------
 set backspace=indent,eol,start " make backspace work like most other apps
 set background=dark            " use dark background
-set cul                        " highlight current line
+set cursorline                 " highlight current line
 set hlsearch                   " highlight search results
+set incsearch                  " search as characters are entered
 set number                     " show line numbers
 set ruler                      " show line,column in status bar
 set smartindent                " smart autoindenting when starting a new line
+set showmatch                  " when your cursor moves over a parenthesis-like
+                               " character, the matching one will be
+                               " highlighted as well
+
 
 " -----------------------------------------------------------------------------
 " Tab stop
@@ -72,7 +78,7 @@ match OverLength /\%80v.\+/
 " Remove trailing whitespace on write
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 " -----------------------------------------------------------------------------
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 
 " -----------------------------------------------------------------------------
 " Move lines up and down
@@ -96,6 +102,11 @@ vnoremap ∆ :m '<-2<CR>gv=gv
 " Enable syntax highlighting for *.adoc AsciiDoc files
 " -----------------------------------------------------------------------------
 autocmd BufNewFile,BufFilePre,BufRead *.adoc set filetype=asciidoc
+
+" -----------------------------------------------------------------------------
+" Enable CtrlP plugin (needs to be installed with "install.sh")
+" -----------------------------------------------------------------------------
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Useful commands:
 "
@@ -124,4 +135,5 @@ autocmd BufNewFile,BufFilePre,BufRead *.adoc set filetype=asciidoc
 " $      - Go to last column
 " :0     - Go to first line of document
 " :$     - Go to last line of document
+" Ctrl-p - Switch file
 
