@@ -48,7 +48,6 @@ set showmatch                  " when your cursor moves over a parenthesis-like
                                " character, the matching one will be
                                " highlighted as well
 
-
 " -----------------------------------------------------------------------------
 " Tab stop
 " -----------------------------------------------------------------------------
