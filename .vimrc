@@ -34,6 +34,12 @@
 " For more information, please refer to <http://unlicense.org/>
 
 " -----------------------------------------------------------------------------
+" Enable plugins (needs to be installed with "install.sh")
+" -----------------------------------------------------------------------------
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/vim-pony
+
+" -----------------------------------------------------------------------------
 " General settings
 " -----------------------------------------------------------------------------
 set backspace=indent,eol,start " make backspace work like most other apps
@@ -101,11 +107,6 @@ vnoremap ∆ :m '<-2<CR>gv=gv
 " Enable syntax highlighting for *.adoc AsciiDoc files
 " -----------------------------------------------------------------------------
 autocmd BufNewFile,BufFilePre,BufRead *.adoc set filetype=asciidoc
-
-" -----------------------------------------------------------------------------
-" Enable CtrlP plugin (needs to be installed with "install.sh")
-" -----------------------------------------------------------------------------
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Useful commands:
 "
