@@ -108,6 +108,17 @@ vnoremap ∆ :m '<-2<CR>gv=gv
 " -----------------------------------------------------------------------------
 autocmd BufNewFile,BufFilePre,BufRead *.adoc set filetype=asciidoc
 
+" -----------------------------------------------------------------------------
+" Enable CtrlP plugin (needs to be installed with "install.sh")
+" -----------------------------------------------------------------------------
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" -----------------------------------------------------------------------------
+" Show status line with file encoding
+" -----------------------------------------------------------------------------
+set laststatus=2
+set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+
 " Useful commands:
 "
 " D      - delete from current cursor position until end of line
