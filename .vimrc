@@ -74,12 +74,6 @@ let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " -----------------------------------------------------------------------------
-" Highlight text that goes over the 120 column limit
-" -----------------------------------------------------------------------------
-highlight OverLength ctermbg=red ctermfg=white guibg=#603030
-match OverLength /\%120v.\+/
-
-" -----------------------------------------------------------------------------
 " Remove trailing whitespace on write
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 " -----------------------------------------------------------------------------
