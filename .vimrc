@@ -117,7 +117,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Show status line with file encoding
 " -----------------------------------------------------------------------------
 set laststatus=2
-set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%=%{\"[\".&ff.\"/\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"/\".&ft.\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
 
 " Useful commands:
 "
